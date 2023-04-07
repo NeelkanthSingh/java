@@ -9,4 +9,22 @@ JDK contains JRE which contains JVM. The compiler is part of the JDK.
 JRE contains JVM. The interpreter is part of the JRE.
 JVM is the same for all platforms. This means that the same Java program can be run on Windows, Mac, and Linux.
 
+Memory Stack: Stack memory in java is used for static memory allocation and the execution of a thread.
+LIFO (Last In First Out) is the order of allocation and de-allocation of memory in the stack.
+The stack is used for storing the local variables and method parameters.
+The stack is also used for storing the reference variables of the objects.
+The stack is also used for storing the return address of the methods.
+The stack is also used for storing the primitive data types.
 
+Memory Heap: Space is used to store objects and JRE classes at runtime.
+New objects are created in the heap.
+Reference variables are stored in the stack and the objects are stored in the heap.
+
+Frame: A stack frame contains all the data for a single method call.
+It contains the local variables, method parameters, return address, and other information.
+The stack frame is created when a method is called and destroyed when the method returns.
+
+Memory Method Area:
+The method area is used to store the class level information like the name of the class, modifiers, fields, methods, constructors, etc.
+
+Pass by value: In Java, all parameters are passed by value. This means that the value of the variable is passed to the method.

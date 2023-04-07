@@ -1,0 +1,12 @@
+Java is a compiled/Interpreted language.
+Compiled means all the code is converted into machine code before it is executed.
+Interpreted means the code is converted into machine code as it is executed.
+
+Java is a statically typed language. This means that the type of variable is known at compile time while in dynamically typed languages, the type of variable is known at run time.
+
+Java code is compiled into bytecode. This bytecode is then interpreted by the Java Virtual Machine (JVM).
+JDK contains JRE which contains JVM. The compiler is part of the JDK.
+JRE contains JVM. The interpreter is part of the JRE.
+JVM is the same for all platforms. This means that the same Java program can be run on Windows, Mac, and Linux.
+
+

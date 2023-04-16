@@ -28,3 +28,9 @@ Memory Method Area:
 The method area is used to store the class level information like the name of the class, modifiers, fields, methods, constructors, etc.
 
 Pass by value: In Java, all parameters are passed by value. This means that the value of the variable is passed to the method.
+
+In a conditional expression, the expression is joined with and or or. The expression is evaluated from left to right. If the first expression is true, the second expression is not evaluated. If the first expression is false, the second expression is evaluated.
+
+In switch statements, the case labels must be constants. The case labels must be of the same type as the switch expression. The case labels must be unique. The case labels must be compile-time constants.
+In switch case, to get an OR scenario, we can use the fall-through feature. This means that we can use the same code for multiple cases.
+In switch case, the expression can be of type byte, short, char, int, enum, String. Or Byte, Short, Character, Integer.

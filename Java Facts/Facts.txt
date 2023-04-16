@@ -25,7 +25,7 @@ It contains the local variables, method parameters, return address, and other in
 The stack frame is created when a method is called and destroyed when the method returns.
 
 Memory Method Area:
-The method area is used to store the class level information like the name of the class, modifiers, fields, methods, constructors, etc.
+The method area is used to store the class level information like the name of the class, modifiers, fields, methods, constructors, static variables, and static methods.
 
 Pass by value: In Java, all parameters are passed by value. This means that the value of the variable is passed to the method.
 
@@ -34,3 +34,19 @@ In a conditional expression, the expression is joined with and or or. The expres
 In switch statements, the case labels must be constants. The case labels must be of the same type as the switch expression. The case labels must be unique. The case labels must be compile-time constants.
 In switch case, to get an OR scenario, we can use the fall-through feature. This means that we can use the same code for multiple cases.
 In switch case, the expression can be of type byte, short, char, int, enum, String. Or Byte, Short, Character, Integer.
+
+In Java, when two class have same name but different package, to use both classes, we can use fully qualified name, for one class, we can use import statement, and for one class, we can use fully qualified name.
+In Java, Classes under java.lang package are imported by default. We don't need to import them explicitly.
+
+Access modifiers in Java are public, private, protected, and default.
+Access modifiers in java are only for classes, attributes, methods, and constructors.
+default is the default access modifier. It is used when we don't specify any access modifier.
+default access modifier only allows access within the package.
+
+static keyword associates with the class rather than the object.
+static method only allow access to static variables.
+
+In Java, main method is what the JVM looks for to start the program. The main method is static. The main method is public. The main method is void. The main method is the entry point of the program.
+String[] args is the command line arguments. It is an array of String objects.
+
+

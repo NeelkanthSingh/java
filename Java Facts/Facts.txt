@@ -49,4 +49,11 @@ static method only allow access to static variables.
 In Java, main method is what the JVM looks for to start the program. The main method is static. The main method is public. The main method is void. The main method is the entry point of the program.
 String[] args is the command line arguments. It is an array of String objects.
 
+Type inference is the automatic deduction of the data type of an expression. In Java, type inference is used for local variable declaration and lambda expressions.
+Type inference with var keyword is only available in Java 10 and above.
 
+Final keyword is used to create constants, prevent inheritance, and prevent method overriding.
+Final keyword can be used with variables, methods, and classes.
+Final variables can be initialized only once. Final variables must be initialized before use.
+Final variables when declared outside the method are can be declared as static.
+Final methods can also be declared inside the method.

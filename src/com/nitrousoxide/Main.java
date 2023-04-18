@@ -10,6 +10,16 @@ public class Main {
             default -> "Not good";
         };
 
+        // enum example, values() exmaple, and ordinal() example
+        Day day = Day.valueOf("MONDAY");
+        for (Day d : Day.values()) {
+            System.out.println(d);
+        }
+        System.out.println(day.ordinal());
+
+        // switch expression example
+
+
         System.out.println(result);
 
     }

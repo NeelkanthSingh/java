@@ -57,3 +57,6 @@ Final keyword can be used with variables, methods, and classes.
 Final variables can be initialized only once. Final variables must be initialized before use.
 Final variables when declared outside the method are can be declared as static.
 Final methods can also be declared inside the method.
+
+enum are used to define a set of named constants. The enum constants are implicitly final and static.
+enum are alternative to static final constants though enum are more powerful.

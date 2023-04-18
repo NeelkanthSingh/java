@@ -60,3 +60,6 @@ Final methods can also be declared inside the method.
 
 enum are used to define a set of named constants. The enum constants are implicitly final and static.
 enum are alternative to static final constants though enum are more powerful.
+
+Wrapper classes are used to convert primitive data types into objects. Wrapper classes are immutable. Wrapper classes are final.
+

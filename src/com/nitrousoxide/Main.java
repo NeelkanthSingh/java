@@ -25,5 +25,11 @@ public class Main {
         double d2 = 5.5;
         int i2 = (int) d2;
         System.out.println(i2);
+
+        // Wrapper Classes
+        Integer i3 = 5;
+        System.out.println(i3);
+        System.out.println(i3.toString());
+        System.out.println(Integer.parseInt("5"));
     }
 }

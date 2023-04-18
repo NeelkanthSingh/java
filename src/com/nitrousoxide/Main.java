@@ -10,17 +10,20 @@ public class Main {
             default -> "Not good";
         };
 
-        // enum example, values() exmaple, and ordinal() example
         Day day = Day.valueOf("MONDAY");
         for (Day d : Day.values()) {
             System.out.println(d);
         }
         System.out.println(day.ordinal());
 
-        // switch expression example
+        // Implicit Type (Widening) Casting
+        int i = 5;
+        double d = i;
+        System.out.println(d);
 
-
-        System.out.println(result);
-
+        // Explicit Type (Narrowing) Casting
+        double d2 = 5.5;
+        int i2 = (int) d2;
+        System.out.println(i2);
     }
 }

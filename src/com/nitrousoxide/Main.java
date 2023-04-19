@@ -31,5 +31,13 @@ public class Main {
         System.out.println(i3);
         System.out.println(i3.toString());
         System.out.println(Integer.parseInt("5"));
+
+        // String Builder
+        StringBuilder sb = new StringBuilder();
+        sb.append("Hello");
+        sb.append(" ");
+        sb.append("World");
+        System.out.println(sb);
+        System.out.println(sb.toString());
     }
 }

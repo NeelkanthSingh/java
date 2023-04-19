@@ -67,3 +67,5 @@ String is immutable. String is a class. String is a reference type.
 String is stored in the String pool. String pool is a special memory area in the heap.
 String shares the same reference if the value is same.
 Creating string using new keyword creates a new object in the heap.
+
+StringBuilder is mutable. It creates object in the heap. It is perfect for string manipulation.

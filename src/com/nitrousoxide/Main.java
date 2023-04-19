@@ -84,5 +84,9 @@ public class Main {
 
         dtf2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         System.out.println(dtf2.format(dateTime));
+
+        // LocalDateTime of
+        LocalDateTime ldt = LocalDateTime.of(2021, 1, 1, 10, 0);
+        System.out.println(ldt);
     }
 }

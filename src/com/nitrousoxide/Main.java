@@ -1,5 +1,11 @@
 package com.nitrousoxide;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+
 public class Main {
     public static void main(String[] args) {
         String grade = "A";
@@ -39,5 +45,44 @@ public class Main {
         sb.append("World");
         System.out.println(sb);
         System.out.println(sb.toString());
+
+        // LocalDate and LocalDatetime
+        LocalDate date = LocalDate.now();
+        System.out.println(date);
+        System.out.println(date.toString());
+        System.out.println(date.getYear());
+        System.out.println(date.getMonth());
+        System.out.println(date.getDayOfWeek());
+
+        LocalTime time = LocalTime.now();
+        System.out.println(time);
+        System.out.println(time.toString());
+        System.out.println(time.getHour());
+        System.out.println(time.getMinute());
+        System.out.println(time.getSecond());
+
+        LocalDateTime dateTime = LocalDateTime.now();
+        System.out.println(dateTime);
+        System.out.println(dateTime.toString());
+        System.out.println(dateTime.getYear());
+        System.out.println(dateTime.getMonth());
+        System.out.println(dateTime.getDayOfWeek());
+        System.out.println(dateTime.getHour());
+        System.out.println(dateTime.getMinute());
+        System.out.println(dateTime.getSecond());
+
+        // Formatting Date and Time
+        DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
+        System.out.println(dtf.format(dateTime));
+
+        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        System.out.println(dtf2.format(dateTime));
+
+        // Formatting Date and Time
+        dtf = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
+        System.out.println(dtf.format(dateTime));
+
+        dtf2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        System.out.println(dtf2.format(dateTime));
     }
 }

@@ -89,7 +89,13 @@ public class Main {
 
         // LocalDateTime ZoneId
         ZoneId zoneId = ZoneId.of("America/Los_Angeles");
-        ZonedDateTime zonedDateTime = ZonedDateTime.now(zoneId);
-        System.out.println(zonedDateTime);
+        LocalDateTime ldt2 = LocalDateTime.now(zoneId);
+        System.out.println(ldt2);
+
+        // LocalDateTime Instant ZoneDateTime
+        Instant instant = Instant.now();
+        System.out.println(instant);
+        ZonedDateTime zonedDateTime2 = instant.atZone(ZoneId.of("America/Los_Angeles"));
+        System.out.println(zonedDateTime2);
     }
 }

@@ -1,8 +1,6 @@
 package com.nitrousoxide;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
@@ -88,5 +86,10 @@ public class Main {
         // LocalDateTime of
         LocalDateTime ldt = LocalDateTime.of(2021, 1, 1, 10, 0);
         System.out.println(ldt);
+
+        // LocalDateTime ZoneId
+        ZoneId zoneId = ZoneId.of("America/Los_Angeles");
+        ZonedDateTime zonedDateTime = ZonedDateTime.now(zoneId);
+        System.out.println(zonedDateTime);
     }
 }

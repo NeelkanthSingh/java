@@ -175,6 +175,11 @@ public class Main {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        // Class Constructors
+        Cat cat = new Cat("Tom");
+        Cat rose = new Cat();
+        cat.setName("Tom");
     }
 
     private static void readFromAFile(File file){

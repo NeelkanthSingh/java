@@ -3,6 +3,7 @@ package com.nitrousoxide;
 import com.nitrousoxide.exception.MyCheckedException;
 import com.nitrousoxide.exception.MyUncheckedException;
 
+import java.io.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -124,7 +125,7 @@ public class Main {
         try {
             int[] numbers = { 1, 2, 3 };
             System.out.println(numbers[4]);
-        } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
+        } catch (ArithmeticException | ArrayIndexOutOfBoundsException | IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }catch (Exception e) {
             System.out.println(e.getMessage());
@@ -155,6 +156,55 @@ public class Main {
             e.printStackTrace();
         }
 
+        // Working on Files
+
+        try {
+            File file = new File("src/test.txt");
+            if(!file.exists()){
+                file.createNewFile();
+            }
+        }catch (IOException e){
+            e.getMessage();
+        }
+
+        try {
+            writeToAFIle("Hello World", false);
+            File file = writeToAFIle("Wonderful", true);
+            readFromAFile(file);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static void readFromAFile(File file){
+        try {
+            Scanner scanner = new Scanner(file);
+            while(scanner.hasNext()){
+                System.out.println(scanner.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static File writeToAFIle(String text, boolean append) throws IOException {
+
+        try{
+            File file = new File("src/testo.txt");
+            if(!file.exists()){
+                file.createNewFile();
+            }
+
+            FileWriter fw = new FileWriter(file, append);
+            PrintWriter pw = new PrintWriter(fw);
+            pw.println(text);
+            pw.flush();
+            pw.close();
+            return file;
+        }catch (IOException e){
+            e.getMessage();
+        }
+        return null;
     }
 
     public static void divide(int x, int y) throws MyCheckedException {

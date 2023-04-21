@@ -82,10 +82,12 @@ Checked exceptions need to be explicitly declared in a method or a constructor u
 Checked exceptions are compile time exceptions.
 Checked exceptions force you to deal with them in the compile time
 Everything in Java is Object Class. Object class is the superclass of all the classes.
+If a client can reasonably be expected to recover from an exception, make it a checked exception. If a client cannot do anything to recover from the exception, make it an unchecked exception.
 
 BigDecimal is used to perform arithmetic operations on floating point numbers. BigDecimal is immutable. BigDecimal is used to perform exact calculations.
 BigDecimal is used to perform calculations on money.
 
 throw keyword is used to throw an exception. throw keyword is used to throw an exception explicitly.
 throws keyword is used to declare an exception. throws keyword is used to declare an exception explicitly.
+You don't want to swallow the exception. You want to throw the exception. You want to throw the exception to the caller. You want to throw the exception to the caller so that the caller can handle the exception.
 

@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java Facts/Facts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Java Facts/Facts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nitrousoxide/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nitrousoxide/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nitrousoxide/exception/MyUncheckedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nitrousoxide/exception/MyUncheckedException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +58,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nitrousoxide" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nitrousoxide.exception" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -89,7 +93,7 @@
       <workItem from="1681589338775" duration="9081000" />
       <workItem from="1681841876817" duration="1310000" />
       <workItem from="1681936913144" duration="2193000" />
-      <workItem from="1682025846518" duration="5634000" />
+      <workItem from="1682025846518" duration="7207000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,8 @@
 package com.nitrousoxide;
 
+import com.nitrousoxide.exception.MyCheckedException;
+import com.nitrousoxide.exception.MyUncheckedException;
+
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -146,8 +149,19 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
+        try {
+            divide(4,0);
+        } catch (MyCheckedException e) {
+            e.printStackTrace();
+        }
 
+    }
 
-
+    public static void divide(int x, int y) throws MyCheckedException {
+        if (y == 0) {
+//            throw new MyUncheckedException("Cannot divide by zero");
+            throw new MyCheckedException("Cannot divide by zero");
+        }
+        System.out.println(x / y);
     }
 }

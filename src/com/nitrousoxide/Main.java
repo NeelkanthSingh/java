@@ -123,6 +123,10 @@ public class Main {
             System.out.println(numbers[4]);
         } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
             System.out.println(e.getMessage());
+        }catch (Exception e) {
+            System.out.println(e.getMessage());
+        }finally {
+            System.out.println("Finally always runs");
         }
 
     }

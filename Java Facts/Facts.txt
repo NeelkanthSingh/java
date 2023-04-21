@@ -100,3 +100,5 @@ Inside Constructor, you can call another constructor using this keyword.
 In Java, Every Class extends Object Class. Object Class is the superclass of all the classes.
 Class has equals method. equals method is used to compare two objects. default equals method is == operator.
 
+POJOS are Plain Old Java Object. They are simple classes that don't extend any other class and don't implement any interface.
+They are used to transfer data between different layers of an application.

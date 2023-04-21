@@ -181,6 +181,8 @@ public class Main {
         cat.setName("Tom");
 
         System.out.println(cat);
+
+
     }
 
     private static void readFromAFile(File file){

@@ -91,3 +91,4 @@ throw keyword is used to throw an exception. throw keyword is used to throw an e
 throws keyword is used to declare an exception. throws keyword is used to declare an exception explicitly.
 You don't want to swallow the exception. You want to throw the exception. You want to throw the exception to the caller. You want to throw the exception to the caller so that the caller can handle the exception.
 
+If a class implements Flushable and Closeable, then we can use try-with-resources statement.

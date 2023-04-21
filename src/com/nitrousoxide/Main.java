@@ -168,8 +168,9 @@ public class Main {
         }
 
         try {
-            writeToAFIle("Hello World", false);
-            File file = writeToAFIle("Wonderful", true);
+            File file = createAFile();
+            writeToAFIle(file, "Hello World", false);
+            writeToAFIle(file, "Hello Guys", true);
             readFromAFile(file);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -187,19 +188,25 @@ public class Main {
         }
     }
 
-    private static File writeToAFIle(String text, boolean append) throws IOException {
+    private static void writeToAFIle(File file, String text, boolean append) throws IOException {
 
+        try(FileWriter fw = new FileWriter(file, append);
+            PrintWriter pw = new PrintWriter(fw);
+            )
+        {
+            pw.println(text);
+        }catch (IOException e){
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    private static File createAFile(){
         try{
-            File file = new File("src/testo.txt");
+            File file = new File("src/test.txt");
             if(!file.exists()){
                 file.createNewFile();
             }
-
-            FileWriter fw = new FileWriter(file, append);
-            PrintWriter pw = new PrintWriter(fw);
-            pw.println(text);
-            pw.flush();
-            pw.close();
             return file;
         }catch (IOException e){
             e.getMessage();

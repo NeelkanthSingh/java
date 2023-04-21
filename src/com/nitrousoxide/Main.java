@@ -129,5 +129,25 @@ public class Main {
             System.out.println("Finally always runs");
         }
 
+        // Checked Exceptions
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        // Unchecked Exceptions
+//        int result2 = 10 / 0; // Checked Exception
+        // Resolving a Checked exception
+        try {
+            int result2 = 10 / 0;
+            System.out.println(result2);
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+
+
+
+
     }
 }

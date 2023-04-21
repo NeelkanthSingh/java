@@ -69,3 +69,20 @@ String shares the same reference if the value is same.
 Creating string using new keyword creates a new object in the heap.
 
 StringBuilder is mutable. It creates object in the heap. It is perfect for string manipulation.
+
+Exceptions are used to handle errors in the program. Exceptions are objects. Exceptions are thrown using throw keyword. Exceptions are caught using try-catch block.
+Errors are not exceptions. Errors are thrown by the JVM. Errors are not caught by the try-catch block.
+Error are not meant to be caught. Errors are meant to be fixed.
+The Throwable class is the superclass of all the exceptions and errors.
+The Exception class is the superclass of all the exceptions.
+RuntimeException is the superclass of all the unchecked exceptions.
+Unchecked exceptions can be thrown by the JVM or the programmer.
+Unchecked exceptions don't need to be explicitly declared in a method or a constructor using throws keyword.
+Checked exceptions need to be explicitly declared in a method or a constructor using throws keyword.
+Checked exceptions are compile time exceptions.
+Checked exceptions force you to deal with them in the compile time
+Everything in Java is Object Class. Object class is the superclass of all the classes.
+
+BigDecimal is used to perform arithmetic operations on floating point numbers. BigDecimal is immutable. BigDecimal is used to perform exact calculations.
+BigDecimal is used to perform calculations on money.
+

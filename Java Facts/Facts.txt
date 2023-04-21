@@ -86,3 +86,6 @@ Everything in Java is Object Class. Object class is the superclass of all the cl
 BigDecimal is used to perform arithmetic operations on floating point numbers. BigDecimal is immutable. BigDecimal is used to perform exact calculations.
 BigDecimal is used to perform calculations on money.
 
+throw keyword is used to throw an exception. throw keyword is used to throw an exception explicitly.
+throws keyword is used to declare an exception. throws keyword is used to declare an exception explicitly.
+

@@ -98,3 +98,5 @@ Class inside another class if need to be utilized by the outer class, then it sh
 Classes come with default constructors. In case you declare a constructor, the default constructor is not available.
 Inside Constructor, you can call another constructor using this keyword.
 In Java, Every Class extends Object Class. Object Class is the superclass of all the classes.
+Class has equals method. equals method is used to compare two objects. default equals method is == operator.
+

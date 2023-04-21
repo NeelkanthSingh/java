@@ -4,6 +4,7 @@ public class Cat {
     private String name;
 
     public Cat(String name) {
+        this();
         this.name = name;
     }
 
@@ -21,5 +22,11 @@ public class Cat {
 
     public void meaw() {
         System.out.println(this.name + ": Meaw");
+    }
+
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

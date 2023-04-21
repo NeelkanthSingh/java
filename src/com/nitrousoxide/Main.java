@@ -178,8 +178,9 @@ public class Main {
 
         // Class Constructors
         Cat cat = new Cat("Tom");
-        Cat rose = new Cat();
         cat.setName("Tom");
+
+        System.out.println(cat);
     }
 
     private static void readFromAFile(File file){

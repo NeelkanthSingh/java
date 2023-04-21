@@ -108,5 +108,22 @@ public class Main {
         String name = scanner.nextLine().trim();
         System.out.println("You are " + name);
         scanner.close();
+
+        // Exception Handling with Multiple errors
+        try {
+            int[] numbers = { 1, 2, 3 };
+            System.out.println(numbers[4]);
+        } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
+            System.out.println(e.getMessage());
+        }
+
+        // Custom Exception
+        try {
+            int[] numbers = { 1, 2, 3 };
+            System.out.println(numbers[4]);
+        } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }

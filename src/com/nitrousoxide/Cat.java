@@ -24,6 +24,7 @@ public class Cat {
         System.out.println(this.name + ": Meaw");
     }
 
+    @Override // This is just for the readability of the code, no effect on the program
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +

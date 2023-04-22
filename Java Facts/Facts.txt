@@ -104,3 +104,6 @@ POJOS are Plain Old Java Object. They are simple classes that don't extend any o
 They are used to transfer data between different layers of an application.
 
 JavaBeans are classes that follow the JavaBeans naming convention. They have private fields. They have public getters and setters. They have a no-argument constructor. They implement Serializable interface.
+
+Static initialization blocks are used to initialize static variables. Static initialization blocks are executed when the class is loaded. before the main method. before the constructor.
+Instance initialization blocks are used to initialize instance variables. Instance initialization blocks are executed when the class is instantiated. before the constructor.

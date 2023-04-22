@@ -10,6 +10,14 @@ import java.time.format.FormatStyle;
 import java.util.Scanner;
 
 public class Main {
+
+    public static int count1;
+
+    static {
+        count1 = 10;
+        System.out.println("Static block");
+    }
+
     public static void main(String[] args) {
         String grade = "A";
 

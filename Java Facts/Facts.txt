@@ -133,3 +133,12 @@ Interface is better for polymorphism than abstract class.
 Interface has abstract methods, constants, default methods, static methods.
 default methods are used to provide default implementation of the methods.
 default methods are not necessary to be overridden in the implementation classes.
+
+Dependency Injection is a design pattern in which an object receives other objects that it depends on. These other objects are called dependencies.
+It creates loosely coupled applications.
+We can use constructor injection, setter injection.
+We instantiate the dependencies in the configuration or the main method then pass them to the constructor or the setter method.
+
+Singleton is a design pattern in which only one instance of a class can be created.
+Generally, we create a bean/component in the configuration class and annotate it with @Component annotation.
+Then we use @Autowired annotation to inject the dependency.

@@ -190,6 +190,14 @@ public class Main {
 
         System.out.println(cat);
 
+        // Polymorphism
+
+        System.out.println(1+1); // Here it adds the numbers
+        System.out.println("1"+"1"); // Here it concatenates the strings
+
+        Animal tomcat = new Cat("Tom"); // Here it is a Cat but it is an Animal
+        Animal bruto = new Dog("Bruto"); // Here it is a Dog but it is an Animal
+
 
     }
 

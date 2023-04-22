@@ -42,6 +42,7 @@ Access modifiers in Java are public, private, protected, and default.
 Access modifiers in java are only for classes, attributes, methods, and constructors.
 default is the default access modifier. It is used when we don't specify any access modifier.
 default access modifier only allows access within the package.
+protected access modifier allows access within the package and outside the package but through inheritance only.
 
 static keyword associates with the class rather than the object.
 static method only allow access to static variables.
@@ -107,3 +108,12 @@ JavaBeans are classes that follow the JavaBeans naming convention. They have pri
 
 Static initialization blocks are used to initialize static variables. Static initialization blocks are executed when the class is loaded. before the main method. before the constructor.
 Instance initialization blocks are used to initialize instance variables. Instance initialization blocks are executed when the class is instantiated. before the constructor.
+
+Encapsulation means wrapping data and methods that work on data within a single unit.
+Encapsulation can be used to hide the implementation details of a class.
+Inheritance is a mechanism in which one class acquires the properties of another class. It reduces the code duplication.
+Extending class should have a matching constructor.
+Extending class is called subclass. Extended class is called superclass.
+
+Super keyword is used to call the superclass constructor.
+Super Keyword is used to call superclass method.

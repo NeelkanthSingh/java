@@ -127,3 +127,9 @@ It can only be called by a subclass constructor or by another constructor within
 
 Polymorphism is the ability of an object to take on many forms.
 Polymorphism is the ability to present the same interface for differing underlying forms.
+
+Interface by default have abstract methods.
+Interface is better for polymorphism than abstract class.
+Interface has abstract methods, constants, default methods, static methods.
+default methods are used to provide default implementation of the methods.
+default methods are not necessary to be overridden in the implementation classes.

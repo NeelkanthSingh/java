@@ -7,6 +7,7 @@ import java.io.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class Main {
@@ -197,6 +198,17 @@ public class Main {
 
         Animal tomcat = new Cat("Tom"); // Here it is a Cat but it is an Animal
         Animal bruto = new Dog("Bruto"); // Here it is a Dog but it is an Animal
+
+        // Optionals
+
+        String text = null;
+        Optional<String> optional = Optional.ofNullable(text);
+        System.out.println(optional.isPresent());
+        optional.ifPresentOrElse(s -> {
+            System.out.println(s);
+        }, () -> {
+            System.out.println("No value");
+        });
 
 
     }

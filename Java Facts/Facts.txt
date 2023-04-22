@@ -149,3 +149,6 @@ Open-Closed Principle states that a class should be open for extension but close
 Liskov Substitution Principle states that a subclass should be substitutable for its superclass. It should be able to replace the superclass without breaking the application.
 Interface Segregation Principle states that a client should not be forced to depend on methods it does not use. Instead of one fat interface, have multiple small interfaces.
 Dependency Inversion Principle states that Components should depend on abstractions, not on concretions. It can be achieved by using interfaces and dependency injection.
+
+Null Pointer Exception is thrown when we try to access a field or a method of a null object.
+Optional is a container object which may or may not contain a non-null value.

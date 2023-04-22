@@ -142,3 +142,10 @@ We instantiate the dependencies in the configuration or the main method then pas
 Singleton is a design pattern in which only one instance of a class can be created.
 Generally, we create a bean/component in the configuration class and annotate it with @Component annotation.
 Then we use @Autowired annotation to inject the dependency.
+
+SOLID is a design principle that stands for Single Responsibility Principle, Open-Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, and Dependency Inversion Principle.
+Single Responsibility Principle states that a class should have only one responsibility. It should have only one reason to change. One functionality in one class.
+Open-Closed Principle states that a class should be open for extension but closed for modification. It should be easy to extend but hard to modify.
+Liskov Substitution Principle states that a subclass should be substitutable for its superclass. It should be able to replace the superclass without breaking the application.
+Interface Segregation Principle states that a client should not be forced to depend on methods it does not use. Instead of one fat interface, have multiple small interfaces.
+Dependency Inversion Principle states that Components should depend on abstractions, not on concretions. It can be achieved by using interfaces and dependency injection.

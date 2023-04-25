@@ -210,7 +210,23 @@ public class Main {
             System.out.println("No value");
         });
 
+        // Garbage Collection
+        Car car = new Car();
+        car = null; // Here the car is not referenced anymore and it will be garbage collected
 
+        Car mercedes = new Car();
+        Car bmw = new Car();
+        mercedes = bmw; // Here the mercedes is not referenced anymore and it will be garbage collected
+
+        new Car(); // Here the car is not referenced anymore and it will be garbage collected
+
+        System.gc(); // It forces the garbage collection to happen, though not necessarily immediately
+    }
+
+    @SuppressWarnings("removal")
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Garbage collected"); // Called just before the object is garbage collected
     }
 
     private static void readFromAFile(File file){

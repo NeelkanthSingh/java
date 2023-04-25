@@ -7,9 +7,7 @@ import java.io.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
-import java.util.Arrays;
-import java.util.Optional;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -245,6 +243,27 @@ public class Main {
         System.out.println(Arrays.deepToString(numbers4));
         System.out.println(Arrays.deepToString(numbers5));
         System.out.println(Arrays.deepToString(numbers6));
+
+        // Lists
+        List<String> list = new ArrayList<>();
+        list.add("Hello");
+        list.add("World");
+
+        System.out.println(list);
+        System.out.println(list.get(0));
+        System.out.println(list.size());
+        System.out.println(list.contains("Hello"));
+        System.out.println(list);
+
+        for(String s : list){
+            System.out.println(s);
+        }
+
+        list.forEach(System.out::println);
+
+        List<String> list1 = List.of("Hello", "World"); // Immutable List
+
+        System.out.println(list1);
     }
 
     @SuppressWarnings("removal")

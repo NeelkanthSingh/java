@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b649c34-75ea-4813-b135-c0de3609b246" name="Changes" comment="Added statements about condition and switch case.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nitrousoxide/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nitrousoxide/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +94,7 @@
       <workItem from="1682025846518" duration="15894000" />
       <workItem from="1682149165385" duration="8166000" />
       <workItem from="1682195200222" duration="3560000" />
-      <workItem from="1682452425700" duration="2217000" />
+      <workItem from="1682452425700" duration="2787000" />
     </task>
     <servers />
   </component>

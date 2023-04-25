@@ -7,6 +7,7 @@ import java.io.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.Scanner;
 
@@ -221,6 +222,29 @@ public class Main {
         new Car(); // Here the car is not referenced anymore and it will be garbage collected
 
         System.gc(); // It forces the garbage collection to happen, though not necessarily immediately
+
+        // Arrays
+        int[] numbers = new int[5];
+        int numbers2[] = {1,2,3,4,5};
+
+        // 2D Arrays
+        int[][] numbers3 = new int[2][3];
+        int[][] numbers4 = {{1,2,3},{4,5,6}};
+        int[][] numbers5 = new int[][]{
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
+        };
+        int[][] numbers6 = new int[][]{
+                new int[]{1,2,3},
+                new int[]{4,5,6},
+                new int[]{7,8,9}
+        };
+
+        System.out.println(Arrays.toString(numbers2));
+        System.out.println(Arrays.deepToString(numbers4));
+        System.out.println(Arrays.deepToString(numbers5));
+        System.out.println(Arrays.deepToString(numbers6));
     }
 
     @SuppressWarnings("removal")

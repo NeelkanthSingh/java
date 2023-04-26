@@ -264,6 +264,45 @@ public class Main {
         List<String> list1 = List.of("Hello", "World"); // Immutable List
 
         System.out.println(list1);
+
+        // Stack
+        Stack<String> stack = new Stack<>();
+        stack.push("a");
+        stack.push("b");
+        stack.push("c");
+        System.out.println(stack.peek());
+        System.out.println(stack.pop());
+        System.out.println(stack);
+
+        // Queue
+        Queue<String> queue = new LinkedList<>();
+        queue.add("a");
+        queue.add("b");
+        queue.add("c");
+        System.out.println(queue.peek());
+        System.out.println(queue.poll());
+        System.out.println(queue);
+
+        // LinkedList
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.add("a");
+        linkedList.add("b");
+        linkedList.addFirst("c");
+        ListIterator<String> listIterator = linkedList.listIterator();
+        while(listIterator.hasNext()){
+            System.out.println(listIterator.next());
+        }
+        while (listIterator.hasPrevious()){
+            System.out.println(listIterator.previous());
+        }
+
+        // Sets
+        Set<String> set = new HashSet<>();
+        set.add("a");
+        set.add("b");
+        set.add("c");
+        set.forEach(System.out::println);
+        System.out.println(set.size());
     }
 
     @SuppressWarnings("removal")

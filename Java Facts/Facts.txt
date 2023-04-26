@@ -152,3 +152,11 @@ Dependency Inversion Principle states that Components should depend on abstracti
 
 Null Pointer Exception is thrown when we try to access a field or a method of a null object.
 Optional is a container object which may or may not contain a non-null value.
+
+Vector is a thread-safe collection. Vector is synchronized. Vector is slow. If you don't need thread safety, use ArrayList instead of Vector.
+Sets of a class require that class to implement equals and hashCode methods. If you don't implement equals and hashCode methods, then the set will not work properly.
+
+Map is an interface.
+HashTable is a class that implements Map interface. HashTable is thread-safe. Not null. HashTable is synchronized. HashTable is slow.
+LinkedHashMap is a class that implements Map interface. LinkedHashMap is allows null, doubly linked list based implementation, and slow.
+TreeMap is a class that implements Map interface. TreeMap is does not allow null, sorted based on the keys, and slow.

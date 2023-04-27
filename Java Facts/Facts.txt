@@ -163,3 +163,9 @@ TreeMap is a class that implements Map interface. TreeMap is does not allow null
 
 HashMap of objects require that class to implement equals and hashCode methods. If you don't implement equals and hashCode methods, then the HashMap will not work properly.
 Hashcode of a new object is same as the hashcode of the object that is already present in the HashMap.
+
+Generics are needed to remove the runtime errors of ClassCastException. They enforce the type safety.
+ClassCastException is thrown when we try to cast an object to a different type.
+Type Arguments are the type parameters that are passed to the generic class or interface. It enforces that our variable can only work with a specific type of objects.
+E, K, V, N, T means Element, Key, Value, Number and Type
+With Generics, we use wrapper classes instead of primitive types.

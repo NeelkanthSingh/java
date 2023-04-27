@@ -312,6 +312,10 @@ public class Main {
         map.entrySet().forEach(System.out::println);
         map.forEach((k,v) -> System.out.println(k + " " + v));
 
+        // Generics
+        List<String> list2 = new ArrayList<>();
+        Map<String, String> map1 = new HashMap<>();
+
     }
 
     @SuppressWarnings("removal")

@@ -160,3 +160,6 @@ Map is an interface.
 HashTable is a class that implements Map interface. HashTable is thread-safe. Not null. HashTable is synchronized. HashTable is slow.
 LinkedHashMap is a class that implements Map interface. LinkedHashMap is allows null, doubly linked list based implementation, and slow.
 TreeMap is a class that implements Map interface. TreeMap is does not allow null, sorted based on the keys, and slow.
+
+HashMap of objects require that class to implement equals and hashCode methods. If you don't implement equals and hashCode methods, then the HashMap will not work properly.
+Hashcode of a new object is same as the hashcode of the object that is already present in the HashMap.

@@ -303,6 +303,15 @@ public class Main {
         set.add("c");
         set.forEach(System.out::println);
         System.out.println(set.size());
+
+        // Maps
+        Map<String, String> map = new HashMap<>();
+        map.put("a", "Hello");
+        map.put("b", "World");
+        System.out.println(map.get("a"));
+        map.entrySet().forEach(System.out::println);
+        map.forEach((k,v) -> System.out.println(k + " " + v));
+
     }
 
     @SuppressWarnings("removal")

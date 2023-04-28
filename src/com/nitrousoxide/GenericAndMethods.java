@@ -11,6 +11,7 @@ public class GenericAndMethods {
         System.out.println(print(intArray2, 3));
         Double[] doubleArray = {1.1, 2.2, 3.3, 4.4, 5.5};
         System.out.println(print(doubleArray, 3.3));
+
     }
 
     static <T> void print(T[] array) {

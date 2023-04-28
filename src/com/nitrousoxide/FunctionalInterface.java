@@ -3,6 +3,7 @@ package com.nitrousoxide;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.*;
 
 public class FunctionalInterface {
@@ -28,6 +29,11 @@ public class FunctionalInterface {
 
         // Supplier
         Supplier<List<Integer>> listSupplier = () -> new ArrayList<>(Arrays.asList(1, 2, 3));
+
+        // Optional
+        Optional.ofNullable(null)
+                .ifPresentOrElse(System.out::println,
+                () -> System.out.println("Value is null"));
 
         list.
                 stream().

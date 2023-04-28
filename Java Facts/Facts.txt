@@ -182,3 +182,4 @@ Lower Bounded Wildcards restricts the subclasses of specified type but allows su
 Wildcards can only have one bound. With Type Parameters, we can have multiple bounds.
 Type Parameter don't have upper or lower bound like super or extends.
 Type Parameter allow us to capture the type of a variable through out the scope of the method.
+Type Erasure is the process of removing the type parameters and replacing it with the upper bound or Object if no upper bound is specified.

@@ -197,3 +197,5 @@ Terminal operations are collect, count.
 
 Functional Interface is an interface that has only one abstract method to which the lambda expression's parameter and return types are matched.
 Predicate is a functional interface. It has a test method that takes an argument and returns a boolean.
+Consumer is a functional interface. It has an accept method that takes an argument and returns nothing.
+BiFunction is a functional interface. It has an apply method that takes two arguments and returns a value.

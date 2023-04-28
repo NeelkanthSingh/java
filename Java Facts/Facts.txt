@@ -194,3 +194,6 @@ Intermediate operations are stateless. They don't change the stream source.
 Stream operations are executed only when we call a terminal operation.
 Intermediate operations are filter, map, reduce.
 Terminal operations are collect, count.
+
+Functional Interface is an interface that has only one abstract method to which the lambda expression's parameter and return types are matched.
+Predicate is a functional interface. It has a test method that takes an argument and returns a boolean.

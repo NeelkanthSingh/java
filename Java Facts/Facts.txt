@@ -183,3 +183,14 @@ Wildcards can only have one bound. With Type Parameters, we can have multiple bo
 Type Parameter don't have upper or lower bound like super or extends.
 Type Parameter allow us to capture the type of a variable through out the scope of the method.
 Type Erasure is the process of removing the type parameters and replacing it with the upper bound or Object if no upper bound is specified.
+
+Streams are used to process collections of objects. Streams are used to perform aggregate operations on the data returned from collections, arrays, or I/O operations.
+It is a declarative way of processing collections.
+To use stream API, we need to convert the collection to stream. Then we can perform operations on the stream.
+Stream operations are either intermediate or terminal. Intermediate operations return a stream so we can chain multiple intermediate operations without using semicolon.
+Terminal operations are either void or return a non-stream result.
+Intermediate operations are lazy. They are not executed until a terminal operation is invoked.
+Intermediate operations are stateless. They don't change the stream source.
+Stream operations are executed only when we call a terminal operation.
+Intermediate operations are filter, map, reduce.
+Terminal operations are collect, count.

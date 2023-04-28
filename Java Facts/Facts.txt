@@ -170,3 +170,5 @@ Type Arguments are the type parameters that are passed to the generic class or i
 E, K, V, N, T means Element, Key, Value, Number and Type
 With Generics, we use wrapper classes instead of primitive types.
 Bounded Type Parameters are used to restrict the types that can be used as type arguments in a parameterized type.
+Multiple bounded type parameters are used to restrict the types that can be used as type arguments in a parameterized type.
+Multiple bounded type parameters are separated by ampersand(&). Class first then interfaces. Only one class can be used. Multiple interfaces can be used.

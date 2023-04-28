@@ -172,3 +172,5 @@ With Generics, we use wrapper classes instead of primitive types.
 Bounded Type Parameters are used to restrict the types that can be used as type arguments in a parameterized type.
 Multiple bounded type parameters are used to restrict the types that can be used as type arguments in a parameterized type.
 Multiple bounded type parameters are separated by ampersand(&). Class first then interfaces. Only one class can be used. Multiple interfaces can be used.
+Wildcards are used to represent an unknown type. Wildcards are used to make a generic type more flexible.
+Upper Bounded Wildcards are used to relax the restrictions on a variable. It is represented by <? extends Type>.

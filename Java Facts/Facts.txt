@@ -173,4 +173,7 @@ Bounded Type Parameters are used to restrict the types that can be used as type 
 Multiple bounded type parameters are used to restrict the types that can be used as type arguments in a parameterized type.
 Multiple bounded type parameters are separated by ampersand(&). Class first then interfaces. Only one class can be used. Multiple interfaces can be used.
 Wildcards are used to represent an unknown type. Wildcards are used to make a generic type more flexible.
+Unbounded Wildcards are used to relax the restrictions on a variable. It is represented by <?>.
 Upper Bounded Wildcards are used to relax the restrictions on a variable. It is represented by <? extends Type>.
+Lower Bounded Wildcards are used to relax the restrictions on a variable. It is represented by <? super Type>.
+Lower Bounded Wildcards restricts the subclasses of specified type but allows superclasses of specified type.

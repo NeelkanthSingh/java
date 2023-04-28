@@ -1,16 +1,17 @@
 package com.nitrousoxide;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class WildCards {
     public static void main(String[] args) {
-        Integer[] ints = {1, 2, 3};
-        Double[] doubles = {1.1, 2.2, 3.3};
-        print(List.of(ints));
-        print(List.of(doubles));
+        List<Integer> ints = Arrays.asList(1, 2, 3);
+        List<Double> doubles = Arrays.asList(1.1, 2.2, 3.3);
+//        print(ints);
+        print(doubles);
     }
 
-    static void print(List<? extends Number> list) {
+    static void print(List<? super Double> list) {
         list.forEach(System.out::println);
     }
 }

@@ -202,3 +202,4 @@ BiFunction is a functional interface. It has an apply method that takes two argu
 Supplier is a functional interface. It has a get method that takes no argument and returns a value.
 ToIntFunction is a functional interface. It has an applyAsInt method that takes an argument and returns an int value.
 IntConsumer is a functional interface. It has an accept method that takes an int argument and returns nothing.
+Combinator Pattern is a pattern that allows us to combine multiple functions to create a more complex function.

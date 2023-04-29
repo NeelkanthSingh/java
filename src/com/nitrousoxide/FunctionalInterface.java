@@ -22,7 +22,7 @@ public class FunctionalInterface {
         BiFunction<Integer,Integer,Integer> incrementByOneAndMultiplyByTenBiFunction = (e, n) -> (e + 1) * n;
 
         // Consumer
-        Consumer<Integer> printAge = age -> System.out.println(age);
+        Consumer<Integer> printAge = System.out::println;
 
         // BiConsumer
         BiConsumer<Integer, String> printAgeAndName = (age, name) -> System.out.println(age + " " + name);

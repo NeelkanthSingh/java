@@ -62,7 +62,7 @@
       <recent name="com.nitrousoxide.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CombinatorPattern">
+  <component name="RunManager" selected="Application.Lambdas">
     <configuration name="CombinatorPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nitrousoxide.combinatorpattern.CombinatorPattern" />
       <module name="java" />
@@ -89,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenericAndMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nitrousoxide.GenericAndMethods" />
+    <configuration name="Lambdas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nitrousoxide.combinatorpattern.lambdas.Lambdas" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nitrousoxide.combinatorpattern.*" />
+          <option name="PATTERN" value="com.nitrousoxide.combinatorpattern.lambdas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lambdas" />
         <item itemvalue="Application.CombinatorPattern" />
         <item itemvalue="Application.FunctionalInterface" />
         <item itemvalue="Application.Streams" />
         <item itemvalue="Application.WildCards" />
-        <item itemvalue="Application.GenericAndMethods" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +157,7 @@
       <workItem from="1682620830981" duration="3379000" />
       <workItem from="1682693626816" duration="11549000" />
       <workItem from="1682765305431" duration="408000" />
-      <workItem from="1682765719044" duration="4059000" />
+      <workItem from="1682765719044" duration="4980000" />
     </task>
     <servers />
   </component>

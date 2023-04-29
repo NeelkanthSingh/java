@@ -27,17 +27,17 @@ public class CombinatorPattern {
         }
         else System.out.println("Validation passed.");
 
-        hello("John", "Mathew", value -> {
-            System.out.println("No last name for " + value);
+        hello("John", null, () -> {
+            System.out.println("No lastname provided");
         });
     }
 
-    static void hello(String firstName, String lastName, Consumer<String> callback){
+    static void hello(String firstName, String lastName, Runnable callback){
         System.out.println(firstName);
         if(lastName!=null){
             System.out.println(lastName);
         }else{
-            callback.accept(firstName);
+            callback.run();
         }
     }
 }
